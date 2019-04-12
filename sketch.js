@@ -3,7 +3,7 @@ var pos_fondo = 1;
 var dato = 0;
 
 function preload() {
-    tetris = loadImage("tetris.svg")
+    tetris = loadImage("tetris.png")
     tetris_fondo = loadImage("tetris_fondo.jpg")
 }
 
@@ -63,9 +63,10 @@ function draw() {
 
     espacio_infinito();
 
-    image(tetris, 0, height / 2, windowWidth, windowHeight / 2);
+    image(tetris, 0, height / 1.75, windowWidth, windowHeight / 2);
+    //image(tetris, 0, 0, windowWidth, windowHeight);
     fill(255, 170, 0);
-    rect(width / 2, pos - 60, 20, 200);
+    rect(width / 1.96, pos - 60, 24, 200);
 
 }
 
